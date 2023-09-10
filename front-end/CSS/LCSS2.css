@@ -1,0 +1,259 @@
+html {
+    color: #cb232c;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #132D33;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23A112C5'/%3E%3Cstop offset='1' stop-color='%23132D33'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%2367DFFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%2367DFFF' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    color:linear-gradient(to right, #cb232c, #ce1d61);
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .SIUUU{ 
+    color: #cb232c;
+    max-width: 1000px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30PX;
+    margin-left: 140PX;
+  }
+  
+  .description {
+    text-align: center;
+    color: #666;
+  }
+
+input {
+    margin-bottom: 3PX;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    outline: none;
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px #ce1d61;
+    padding: 0 5px;
+    font-size: 18px;
+    width: 100%;
+}
+
+input::placeholder {
+    color: rgba(37, 37, 37, 0.5);
+}
+  
+  label {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 18px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    cursor: pointer;
+  }
+  
+  label:first-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, #cb232c, #ce1d61);
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+.back-button{
+  margin-left: 5px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, #cb232c, #ce1d61);
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+  .text-center {
+    text-align: center;
+  }
+  
+  .modal-wrap {
+    max-width: 600px;
+    margin: 50px auto;
+    transition: transform 300ms ease-in-out;
+  }
+  
+  .modal-header {
+    height: 45px;
+    background: white;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-header span {
+    display: block;
+    height: 12px;
+    width: 12px;
+    margin: 5px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.2);
+  }
+  
+  .modal-header span.is-active {
+    background: rgba(0,0,0,0.4);
+    background: linear-gradient(to right, #cb232c, #ce1d61);
+  }
+  
+  .modal-bodies {
+    position: relative;
+    perspective: 1000px;
+  }
+  
+  .modal-body {
+    background: white;
+    padding: 40px 100px;
+    box-shadow: 0px 50px 30px -30px rgba(0,0,0,0.3);
+    margin-bottom: 50px;
+    position: absolute;
+    top: 0;
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    transform-origin: top left;
+  }
+  
+  .modal-body.is-showing {
+    display: block;
+  }
+  
+  .animate-out {
+    animation: out 600ms ease-in-out forwards;
+  }
+  
+  .animate-in {
+    animation: in 500ms ease-in-out forwards;
+    display: block;
+  }
+  
+  .animate-up {
+    transform: translateY(-500px) rotate(30deg);
+  }
+  
+  @keyframes out {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    60% {
+      transform: rotate(60deg);
+    }
+    100% {
+      transform: translateY(800px) rotate(10deg);
+    }
+  }
+  
+  @keyframes in {
+    0% {
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  }
+  
+  .file-select {
+    border-radius: 10px;
+    max-width: 120px;
+    position: relative;
+    display: inline-block;
+    }
+
+    .file-select::before {
+        padding: 10PX;
+    background-color: #5678EF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    content: 'Seleccionar'; /* texto por defecto */
+    margin-top: 8PX;
+    position: absolute;
+   
+    }
+    
+  #FOTO {
+  background: linear-gradient(to right, #cb232c, #ce1d61);
+  width: 100px;
+  height: 100px;
+  font-size: 16px; 
+  border-radius: 10px;
+  color: #ffe1e1;
+  border: none;
+  cursor: pointer;
+  }
+  #Botton-Ir-Login {
+   
+    width: 70px;
+    height: 50px;
+    border-radius: 500px; /* Hace que el botón sea un círculo */
+    background-color: #410055; /* Color vino */
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px; /* Centra verticalmente el contenido */
+    text-decoration: none; /* Quita el subrayado del texto (opcional) */
+    display: block;
+    margin-right: 700px; 
+  }
+  
+  /* Cambiar el color del botón cuando se pasa el cursor sobre él */
+  #Botton-Ir-Login:hover {
+    background-color: #9C001B; /* Color vino oscuro */
+  }
+    .file-select input[type="file"] {
+    margin-bottom: 12PX;
+    opacity: 0;
+    width: 60px;
+    height: 80px;
+    display: inline-block;
+    
+    }
+    
+    #src-file1::before {
+    content: 'Foto de perfil';
+    }
+
+    .boton {
+      color: #fff;
+      border: none;
+      background: linear-gradient(to right, #cb232c, #ce1d61);
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 20px;
+      border-radius: 10px;
+      }

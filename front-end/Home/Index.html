@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="BootstrapCSS">
+    <link rel="stylesheet" href="MCSS">
+    <link rel="stylesheet" href="FCSS">
+    <link rel="stylesheet" href="CCSS">
+    
+    <script src="Jquery"></script>
+    <script src="BootstrapJS"></script>
+    <script src="publicaciones.js"></script>
+    <script src="persona.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title></title>
+</head>
+
+<header onload="obtenerDatosUsuario()">
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <span id="logo"> <img src="/Desarrollo" width="70psx"
+      height="60px" alt=""> 
+ </span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="searchcontainer">
+        <input type="text" placeholder="Buscar" />
+        <i class="fas fa-search"></i>
+      </div>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <div id="profile-card" class="profile-card">
+            <img class="perfilImagen" src="" alt="Imagen de perfil" id="perfilImagen">
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<header>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('blob:https://web.whatsapp.com/fb87bf39-16d4-4349-96fd-97c37874535b')">
+        <div class="carousel-caption">
+          <h5>CraftTrade</h5>
+          <p>Es una manera enriquecedora de aprender y construir relaciones significativas 
+             basadas en el intercambio y el apoyo mutuo.</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('https://media.istockphoto.com/id/1290690779/es/foto/la-gente-tiene-en-la-mano-un-rompecabezas-soluciones-empresariales-%C3%A9xito-y-estrategia.jpg?s=612x612&w=0&k=20&c=jvRxjN61tsNF0iGrXo_fvCR89EQUItLS74lWOVdAQWE=')">
+        <div class="carousel-caption">
+          <h5>¿Sabes qué es aprendizaje mutuo o aprendizaje recíproco?</h5>
+          <p>es un enfoque, donde ambos participantes se benefician al compartir sus habilidades y 
+             conocimientos, ya que mientras uno enseña, también está aprendiendo de la otra persona</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('https://media.istockphoto.com/id/1402730170/es/foto/multihabilidades-o-habilidades-blandas-y-responsabilidad-personal-rrhh-concepto-de-recursos.jpg?s=612x612&w=0&k=20&c=oSd9L04p7wI74uf6xkdTW7q5E8Fc-jv6QCLtaCOPZIY=')">
+        <div class="carousel-caption">
+          <h5>¿Sabías qué...?</h5>
+          <p>En CraftTrade, al aprender una nueva habilidad de alguien más, se amplía el conocimiento 
+             y las capacidades individuales.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</header>
+
+<!-- Page Content -->
+<section class="py-5">
+  <div class="container">
+    <h1 class="fw-light">¡Bienvenido a CraftTrade!</h1>
+    <p class="lead">Publicaciones que te pueden interesar</p>
+  </div>
+</section>
+</header>
+
+</div><nav class="main-menu">
+
+
+  
+  <div>
+     <a class="logo" href="http://startific.com">
+     </a> 
+   </div> 
+ <div class="settings"></div>
+ <div class="scrollbar" id="style-1">
+       
+ <ul>
+   
+ <li>                                   
+ <a href="/index">
+ <i class="fa fa-home fa-lg"></i>
+ <span class="nav-text">Home</span>
+ </a>
+ </li>   
+    
+ <li>                                 
+ <a href="/Login">
+ <i class="fa fa-user fa-lg"></i>
+ <span class="nav-text">Login</span>
+ </a>
+ </li>   
+ 
+     
+ <li>                                 
+ <a href="http://startific.com">
+ <i class="fa fa-envelope-o fa-lg"></i>
+ <span class="nav-text">Chats</span>
+ </a>
+ </li>   
+   
+   
+ </li>
+ <li class="darkerlishadow">
+ <a href="http://startific.com">
+ <i class="fa fa-clock-o fa-lg"></i>
+ <span class="nav-text">Noticias</span>
+ </a>
+ </li>
+   
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-desktop fa-lg"></i>
+ <span class="nav-text">Technology</span>
+ </a>
+ </li>
+   
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-plane fa-lg"></i>
+ <span class="nav-text">Travel</span>
+ </a>
+ </li>
+   
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-shopping-cart"></i>
+  <span class="nav-text">Shopping</span>
+ </a>
+ </li>
+   
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-microphone fa-lg"></i>
+ <span class="nav-text">Film & Music</span>
+ </a>
+ </li>
+ 
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-flask fa-lg"></i>
+ <span class="nav-text">Web Tools</span>
+ </a>
+ </li>
+   
+ </ul>
+ 
+   
+ <li>
+                                    
+ <a href="http://startific.com">
+ <i class="fa fa-question-circle fa-lg"></i>
+ <span class="nav-text">Help</span>
+ </a>
+ </li>   
+     
+   
+ <ul class="logout">
+ <li>
+                    <a href="/Blog">
+                          <i class="fa fa-lightbulb-o fa-lg"></i>
+                         <span class="nav-text">
+                             BLOG 
+                         </span>
+                         
+                     </a>
+ </li>  
+ </ul>
+         </nav>
+         
+<body onload="cargarTabla()">
+
+  <div class="fondoCard">	
+         <div class="card-container" id="cuaerpodelatabladeoperaciones"></div>
+  </div>
+
+<div class="formF">
+<form>
+  <h1 class="title2">Agregar publicación</h1>
+  <i class="fa-solid fa-bullhorn"></i>
+  <label>
+  <input placeholder="¿Que te interesa aprender?" id="INTERES">
+  </label>
+  <label>
+  <input placeholder="¿Que habilidad te gustaría enseñar?" id="SABE">
+  </label>
+  <label>
+  <input placeholder="Introduce tu numero de telefono" id="NUMERO">
+  </label>
+  <div class="file-select" id="src-file1" >
+  <input type="file" id="FOTO" name="src-file1" aria-label="Foto de perfil" style="border-radius: 10px;">
+  </div>
+  <br>
+  <input class="boton" id="button" type="button" value="Publicar" onclick="Guardar()">
+</form>
+</div>
+</body>
+
+          <footer class="footer-basic">
+              <div class="social">
+                  <a href="#"><i class="icon ion-social-instagram"></i></a>
+                  <a href="#"><i class="icon ion-social-facebook"></i></a>      
+                  <a href="#"><i class="icon ion-ios-telephone"></i></a>
+                  <a href="#"><i class="icon ion-ios-email"></i></a>
+              </div>
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="/Servicios">Servicios</a></li>
+                  <li class="list-inline-item"><a href="/Acerca_de">Acerca de</a></li>
+                  <li class="list-inline-item"><a href="/Terminos">Terminos</a></li>
+                  <li class="list-inline-item"><a href="/Politicas">Politica de Privacidad</a></li>
+              </ul>
+              <p class="copyright">CraftTrade © 2023</p>
+              <link rel="stylesheet" href="footer.css">
+          </footer>
+          <script type:"text-javascript">
+
+    let imagenbase64 = "";
+    $("#FOTO").change(function() {
+        readURL(this);
+    });
+    function readURL(input){
+        if (input.files && input.files[0]){
+            let reader = new FileReader();
+
+            reader.onload = function(e){
+                imagenbase64=e.target.result;
+            }
+            reader.readAsDataURL(input.files[0]);
+
+        }
+    }
+
+    let nombreUsuario = "";
+
+    function obtenerDatosUsuario() {
+    const tics_instanciada = new personaP();
+    tics_instanciada.obtenerUsuario().then(function(response) {
+      nombreUsuario = response.NOMBRE;
+      // Obtener el elemento de la imagen de perfil
+      const perfilImagen = document.getElementById('perfilImagen');
+      // Actualizar la URL de la imagen de perfil
+      perfilImagen.src = response.FOTO;
+    }).catch(function(error) {
+      console.error('Error al obtener los datos del usuario:', error);
+    });
+  }
+    
+  function Guardar() {
+  var FECHAACTUAL = new Date(); // Obtener la fecha y hora actual
+
+  var tics_instanciada = new publicacionesdb(
+    0,
+    nombreUsuario,
+    document.getElementById("INTERES").value,
+    document.getElementById("SABE").value,
+    document.getElementById("NUMERO").value,
+    imagenbase64,
+    FECHAACTUAL // Agregar la fecha actual a la publicación
+  );
+
+  tics_instanciada.Guardar()
+    .then(function (response) {
+      console.log("Success!", response);
+      alert("Guardado con éxito");
+      cargarTabla();
+    })
+    .catch(function (error) {
+      console.error("Failed", error);
+      alert("Error " + error);
+    });
+  }
+
+  function cargarTabla() {
+  obtenerDatosUsuario();
+
+  var tics_instanciada = new publicacionesdb(); 
+  tics_instanciada.Listar()
+    .then(function (response) {
+      // Ordenar las publicaciones en orden inverso según la fecha de guardado
+      response.sort(function (a, b) {
+        return new Date(b.FECHAACTUAL) - new Date(a.FECHAACTUAL);
+      });
+
+      var cardContent = ""; // Variable para almacenar el contenido del card
+      var maxPublicaciones = 3; // Máximo número de publicaciones a mostrar
+      // Tomar solo las últimas 3 publicaciones o la cantidad de publicaciones existentes si es menor
+      var ultimasPublicaciones = response.slice(
+        0,
+        Math.min(maxPublicaciones, response.length)
+      );
+
+      // Iterar sobre las últimas publicaciones
+      for (var elemento of ultimasPublicaciones) {
+        cardContent +=
+          '<article class="card">' +
+          '<img class="card__background" src="' +
+          elemento.FOTO +
+          '" alt="Photo of Cartagena\'s cathedral at the background and some colonial style houses" width="1920" height="2193"/>' +
+          '<div class="card__content | flow">' +
+          '<div class="card__content--container | flow">' +
+          '<h2 class="card__title">' +
+          elemento.NOMBRE +
+          '</h2>' +
+          '<p class="card__description">' +
+          "Interes: " +
+          elemento.INTERES +
+          "<br>" +
+          "Sabe: " +
+          elemento.SABE +
+          '</p>' +
+          '</div>' +
+          '<button class="card__button">' +
+          "+506 " +
+          elemento.NUMERO +
+          '</button>' +
+          '</div>' +
+          '</article>';
+      }
+
+      // Agregar el contenido del card al elemento contenedor
+      document.getElementById(
+        "cuaerpodelatabladeoperaciones"
+      ).innerHTML = cardContent;
+    })
+    .catch(function (error) {
+      console.error("Failed", error);
+      alert("Error " + error);
+    });
+}
+
+
+
+          </script>
+
+</html>
+
+   

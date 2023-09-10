@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="BootstrapCSS">
+    <link rel="stylesheet" href="MCSS">
+    <link rel="stylesheet" href="FCSS">
+    <link rel="stylesheet" href="CCSS2">
+    <script src="BootstrapJS"></script>
+    <script src="publicaciones.js"></script>
+    <script src="persona.js"></script>
+    <script src="Jquery"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title></title>
+</head>
+
+</div><nav class="main-menu">
+  <div>
+     <a class="logo" href="Desarrollo">
+     </a> 
+   </div> 
+ <div class="settings"></div>
+ <div class="scrollbar" id="style-1">
+       
+ <ul>
+   
+ <li>                                   
+ <a href="/index">
+ <i class="fa fa-home fa-lg"></i>
+ <span class="nav-text">Home</span>
+ </a>
+ </li>   
+    
+ <li>                                 
+ <a href="/Login">
+ <i class="fa fa-user fa-lg"></i>
+ <span class="nav-text">Login</span>
+ </a>
+ </li>   
+ 
+     
+ <li>                                 
+ <a href="http://startific.com">
+ <i class="fa fa-envelope-o fa-lg"></i>
+ <span class="nav-text">Chats</span>
+ </a>
+ </li>   
+   
+   
+ </li>
+ <li class="darkerlishadow">
+ <a href="http://startific.com">
+ <i class="fa fa-clock-o fa-lg"></i>
+ <span class="nav-text">Noticias</span>
+ </a>
+ </li>
+   
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-desktop fa-lg"></i>
+ <span class="nav-text">Technology</span>
+ </a>
+ </li>
+   
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-plane fa-lg"></i>
+ <span class="nav-text">Travel</span>
+ </a>
+ </li>
+   
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-shopping-cart"></i>
+  <span class="nav-text">Shopping</span>
+ </a>
+ </li>
+   
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-microphone fa-lg"></i>
+ <span class="nav-text">Film & Music</span>
+ </a>
+ </li>
+ 
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-flask fa-lg"></i>
+ <span class="nav-text">Web Tools</span>
+ </a>
+ </li>
+   
+ </ul>
+ 
+   
+ <li>
+                                    
+ <a href="http://startific.com">
+ <i class="fa fa-question-circle fa-lg"></i>
+ <span class="nav-text">Help</span>
+ </a>
+ </li>   
+     
+   
+ <ul class="logout">
+ <li>
+                    <a href="http://startific.com">
+                          <i class="fa fa-lightbulb-o fa-lg"></i>
+                         <span class="nav-text">
+                             BLOG 
+                         </span>
+                         
+                     </a>
+ </li>  
+ </ul>
+         </nav>
+<body onload="cargarTabla()">
+<section>
+    <div class="container py-5">
+  
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <img src="" alt="Imagen de perfil" id="perfilImagen"
+                class="rounded-circle img-fluid" style="height: 150px; width: 150px;">
+              <h5 class="my-3" id="nombreUsuario"></h5>
+              <div class="d-flex justify-content-center mb-2">
+                <button type="button" class="btn btn-primary">Seguir</button>
+                <button type="button" class="btn btn-outline-primary ms-1">Mensaje</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Nombre completo</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0" id="nombreUsuario2"> </p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Email</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0" id="emailUsuario"> </p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0"></p>Genero</p>
+                </div>
+                <div class="col-sm-3">
+                  <p class="text-muted mb-0" id="generoUsuario"></p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Fecha de nacimiento</p>
+                </div>
+                <div class="col-sm-3">
+                  <p class="text-muted mb-0" id="fechaUsuario"> </p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Numero de telefono</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">Bay Area, San Francisco, CA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </section>
+  <h1 class="titulo">Tus publicaciones</h1>
+  <div class="fondoCard">	
+    <div class="card1-container" id="cuaerpodelatabladeoperaciones">     
+    </div>
+</div>
+</body>
+<footer class="footer-basic">
+              <div class="social">
+                  <a href="#"><i class="icon ion-social-instagram"></i></a>
+                  <a href="#"><i class="icon ion-social-facebook"></i></a>      
+                  <a href="#"><i class="icon ion-ios-telephone"></i></a>
+                  <a href="#"><i class="icon ion-ios-email"></i></a>
+              </div>
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="/Servicios">Servicios</a></li>
+                  <li class="list-inline-item"><a href="/Acerca_de">Acerca de</a></li>
+                  <li class="list-inline-item"><a href="/Terminos">Terminos</a></li>
+                  <li class="list-inline-item"><a href="/Politicas">Politica de Privacidad</a></li>
+              </ul>
+              <p class="copyright">CraftTrade © 2023</p>
+              <link rel="stylesheet" href="footer.css">
+          </footer>
+          <script type:"text-javascript">
+
+    let imagenbase64 = "";
+    $("#FOTO").change(function() {
+        readURL(this);
+    });
+    function readURL(input){
+        if (input.files && input.files[0]){
+            let reader = new FileReader();
+
+            reader.onload = function(e){
+                imagenbase64=e.target.result;
+            }
+            reader.readAsDataURL(input.files[0]);
+
+        }
+    }
+
+    let nombreUsuario = "";
+
+    function obtenerDatosUsuario() {
+    const tics_instanciada = new personaP();
+    tics_instanciada.obtenerUsuario().then(function(response) {
+      nombreUsuario = response.NOMBRE;
+      apellidoUsuario = response.APELLIDO;
+      emailUsuario = response.EMAIL;
+      fechaUsuario = response.FECHAN;
+      generoUsuario = response.GENERO;
+
+      // Actualizar el elemento HTML con el nombre del usuario
+        const nombreElemento2 = document.getElementById('nombreUsuario2');
+        nombreElemento2.textContent = nombreUsuario +" "+ apellidoUsuario;
+
+        const nombreElemento = document.getElementById('nombreUsuario');
+        nombreElemento.textContent = nombreUsuario;
+
+        const nacimientoElemento = document.getElementById('fechaUsuario');
+        nacimientoElemento.textContent = fechaUsuario;
+
+        const generoElemento = document.getElementById('generoUsuario');
+        generoElemento.textContent = generoUsuario;
+
+        const emailElemento = document.getElementById('emailUsuario');
+        emailElemento.textContent = emailUsuario;
+
+      // Obtener el elemento de la imagen de perfil
+      const perfilImagen = document.getElementById('perfilImagen');
+      // Actualizar la URL de la imagen de perfil
+      perfilImagen.src = response.FOTO;
+    }).catch(function(error) {
+      console.error('Error al obtener los datos del usuario:', error);
+    });
+  }
+    
+  function Guardar() {
+  var FECHAACTUAL = new Date(); // Obtener la fecha y hora actual
+
+  var tics_instanciada = new publicacionesdb(
+    0,
+    nombreUsuario,
+    document.getElementById("INTERES").value,
+    document.getElementById("SABE").value,
+    document.getElementById("NUMERO").value,
+    imagenbase64,
+    FECHAACTUAL // Agregar la fecha actual a la publicación
+  );
+
+  tics_instanciada.Guardar()
+    .then(function (response) {
+      console.log("Success!", response);
+      alert("Guardado con éxito");
+      cargarTabla();
+    })
+    .catch(function (error) {
+      console.error("Failed", error);
+      alert("Error " + error);
+    });
+  }
+
+  function Eliminar(id) {
+  const tics_instanciada = new publicacionesdb();
+  tics_instanciada._id = id;
+  tics_instanciada.Eliminar()
+    .then(function (response) {
+      console.log("Success!", response);
+      alert("Eliminado con éxito");
+      cargarTabla();
+    })
+    .catch(function (error) {
+      console.error("Failed", error);
+      alert("Error " + error);
+    });
+}
+
+
+
+  function cargarTabla() {
+  obtenerDatosUsuario();
+
+  var tics_instanciada = new publicacionesdb(); 
+  tics_instanciada.ListarPorID()
+    .then(function (response) {
+      // Ordenar las publicaciones en orden inverso según la fecha de guardado
+      response.sort(function (a, b) {
+        return new Date(b.FECHAACTUAL) - new Date(a.FECHAACTUAL);
+      });
+
+      var cardContent = ""; // Variable para almacenar el contenido del card
+
+      // Iterar sobre las últimas publicaciones
+      for (var elemento of response) {
+  cardContent +=
+    '<article class="card1">' +
+    '<img class="card1__background" src="' +
+    elemento.FOTO +
+    '" alt="Photo of Cartagena\'s cathedral at the background and some colonial style houses" width="1920" height="2193"/>' +
+    '<div class="card1__content | flow">' +
+    '<div class="card1__content--container | flow">' +
+    '<h2 class="card1__title">' +
+    elemento.NOMBRE +
+    '</h2>' +
+    '<p class="card1__description">' +
+    "Interes: " +
+    elemento.INTERES +
+    "<br>" +
+    "Sabe: " +
+    elemento.SABE +
+    '</p>' +
+    '</div>' +
+    '<div class="button-container">' +
+    '<button class="card1__button">' +
+    "+506 " +
+    elemento.NUMERO +
+    '</button>' +
+    '<button class="card1__button" onclick="Eliminar(\'' + elemento._id + '\')">Eliminar</button>' +
+    '</div>' +
+    '</div>' +
+    '</article>';
+}
+
+      // Agregar el contenido del card al elemento contenedor
+      document.getElementById(
+        "cuaerpodelatabladeoperaciones"
+      ).innerHTML = cardContent;
+    })
+    .catch(function (error) {
+      console.error("Failed", error);
+      alert("Error " + error);
+    });
+}
+
+
+
+
+
+          </script>
+
+</html>

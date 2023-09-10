@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="BootstrapCSS">
+    <link rel="stylesheet" href="MCSS">
+    <link rel="stylesheet" href="FCSS">
+    <link rel="stylesheet" href="CCSS4">
+
+    <script src="Jquery"></script>
+    <script src="BootstrapJS"></script>
+    <script src="Comentarios.js"></script>
+    <script src="persona.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title></title>
+</head>
+
+<header>
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <span id="logo"> <img src="/Desarrollo" width="70psx"
+      height="60px" alt=""> 
+ </span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <div id="profile-card" class="profile-card">
+            <img class="perfilImagen" id="perfilImagen" src="" alt="Imagen de perfil">
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<section class="py-5">
+  <div class="container">
+    <br>
+    <h1 class="fw-light">¡Bienvenido al apartado Blog!</h1>
+    <p class="lead">¡Sientete libre de expresarte junto a otros usuarios!</p>
+  </div>
+</section>
+</header>
+
+</div><nav class="main-menu">
+  <div>
+     <a class="logo" href="http://startific.com">
+     </a> 
+   </div> 
+ <div class="settings"></div>
+ <div class="scrollbar" id="style-1">
+       
+ <ul>
+   
+ <li>                                   
+ <a href="/index">
+ <i class="fa fa-home fa-lg"></i>
+ <span class="nav-text">Home</span>
+ </a>
+ </li>   
+    
+ <li>                                 
+ <a href="/Login">
+ <i class="fa fa-user fa-lg"></i>
+ <span class="nav-text">Login</span>
+ </a>
+ </li>   
+ 
+     
+ <li>                                 
+ <a href="http://startific.com">
+ <i class="fa fa-envelope-o fa-lg"></i>
+ <span class="nav-text">Chats</span>
+ </a>
+ </li>   
+   
+   
+ </li>
+ <li class="darkerlishadow">
+ <a href="http://startific.com">
+ <i class="fa fa-clock-o fa-lg"></i>
+ <span class="nav-text">Noticias</span>
+ </a>
+ </li>
+   
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-desktop fa-lg"></i>
+ <span class="nav-text">Technology</span>
+ </a>
+ </li>
+   
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-plane fa-lg"></i>
+ <span class="nav-text">Travel</span>
+ </a>
+ </li>
+   
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-shopping-cart"></i>
+  <span class="nav-text">Shopping</span>
+ </a>
+ </li>
+   
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-microphone fa-lg"></i>
+ <span class="nav-text">Film & Music</span>
+ </a>
+ </li>
+ 
+ <li class="darkerli">
+ <a href="http://startific.com">
+ <i class="fa fa-flask fa-lg"></i>
+ <span class="nav-text">Web Tools</span>
+ </a>
+ </li>
+   
+ </ul>
+ 
+   
+ <li>
+                                    
+ <a href="http://startific.com">
+ <i class="fa fa-question-circle fa-lg"></i>
+ <span class="nav-text">Help</span>
+ </a>
+ </li>   
+     
+   
+ <ul class="logout">
+ <li>
+                    <a href="http://startific.com">
+                          <i class="fa fa-lightbulb-o fa-lg"></i>
+                         <span class="nav-text">
+                             BLOG 
+                         </span>
+                         
+                     </a>
+ </li>  
+ </ul>
+         </nav>
+         
+<body onload="cargarTabla()">
+  <div class="Comentarios" id="Comentarios">	
+  </div>
+
+<div class="formF">
+<form>
+  <h1 class="title2">Que piensas hoy?</h1>
+  <label>
+  <i class="fa-solid fa-bullhorn"></i>
+  <input placeholder="Comentario" id="Comentario">
+  <input class="boton" id="button" type="button" value="Publicar" onclick="Guardar()">
+  </label>
+</form>
+</div>
+</body>
+
+          <footer class="footer-basic">
+              <div class="social">
+                  <a href="#"><i class="icon ion-social-instagram"></i></a>
+                  <a href="#"><i class="icon ion-social-facebook"></i></a>      
+                  <a href="#"><i class="icon ion-ios-telephone"></i></a>
+                  <a href="#"><i class="icon ion-ios-email"></i></a>
+              </div>
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="/Servicios">Servicios</a></li>
+                  <li class="list-inline-item"><a href="/Acerca_de">Acerca de</a></li>
+                  <li class="list-inline-item"><a href="/Terminos">Terminos</a></li>
+                  <li class="list-inline-item"><a href="/Politicas">Politica de Privacidad</a></li>
+              </ul>
+              <p class="copyright">CraftTrade © 2023</p>
+              <link rel="stylesheet" href="footer.css">
+          </footer>
+          <script type="text/javascript">
+
+
+let nombreUsuario = "";
+let imagen2 = "";
+
+function obtenerDatosUsuario() {
+    const tics_instanciada = new personaP();
+    tics_instanciada.obtenerUsuario().then(function(response) {
+      nombreUsuario = response.NOMBRE;
+      imagen2 = response.FOTO;
+      // Obtener el elemento de la imagen de perfil
+      const perfilImagen = document.getElementById('perfilImagen');
+      // Actualizar la URL de la imagen de perfil
+      perfilImagen.src = response.FOTO;
+    }).catch(function(error) {
+      console.error('Error al obtener los datos del usuario:', error);
+    });
+  }
+
+
+        function Guardar() {
+              var blog_instanciada = new blogdb(
+                0,
+                nombreUsuario,
+                document.getElementById("Comentario").value,
+                imagen2
+      
+              );
+          
+              blog_instanciada .Guardar()
+                .then(function (response) {
+                  console.log("Success!", response);
+                  alert("Guardado con éxito");
+                  cargarTabla();
+                })
+                .catch(function (error) {
+                  console.error("Failed", error);
+                  alert("Error " + error);
+                });
+          
+            }          
+
+    function cargarTabla() {
+      obtenerDatosUsuario()
+      var tics_instanciada= new blogdb();
+      tics_instanciada.Listar().then(function(response) {
+      var cardContent = ''; // Variable para almacenar el contenido del card
+
+    for (var elemento in response) {
+    cardContent +=
+    '<div class="ag-format-container">' +
+    '<div class="ag-courses_box">' +
+    '<div class="ag-courses_item">' +
+    '<a href="#" class="ag-courses-item_link">' +
+    '<div class="ag-courses-item_bg"></div>' +
+    '<div class="ag-courses-item_title">'+
+    '<img class="perfilImagen" src="'+response[elemento].FOTO+'">'
+    + response[elemento].NOMBRE +
+    "</div>" +
+    '<div class="ag-courses-item_date-box">'  + response[elemento].COMENTARIO +
+    "</div>" +
+    "</a>" +
+    "</div>" +
+    "</div>" +
+    "</div>";
+    }
+    // Agregar el contenido del card al elemento contenedor
+    document.getElementById("Comentarios").innerHTML = cardContent;
+  }, function(error) {
+    console.error("Failed", error);
+    alert("Error " + error);
+  });}
+
+  let imagenbase64 = "";
+    $("#FOTO").change(function() {
+        readURL(this);
+    });
+    function readURL(input){
+        if (input.files && input.files[0]){
+            let reader = new FileReader();
+
+            reader.onload = function(e){
+                imagenbase64=e.target.result;
+            }
+            reader.readAsDataURL(input.files[0]);
+
+        }
+    }
+
+
+          </script>
+
+</html>
+
+   
